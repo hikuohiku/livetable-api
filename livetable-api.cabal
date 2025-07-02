@@ -1,6 +1,6 @@
-cabal-version: 2.2
+cabal-version: 1.12
 
--- This file has been generated from package.yaml by hpack version 0.38.0.
+-- This file has been generated from package.yaml by hpack version 0.38.1.
 --
 -- see: https://github.com/sol/hpack
 
@@ -12,12 +12,11 @@ bug-reports:    https://github.com/hikuohiku/livetable-api/issues
 author:         Hiroki Ando
 maintainer:     hikuohiku@gmail.com
 copyright:      2025 Hiroki Ando
-license:        BSD-3-Clause
+license:        MIT
 license-file:   LICENSE
 build-type:     Simple
 extra-source-files:
     README.md
-    CHANGELOG.md
 
 source-repository head
   type: git
@@ -27,8 +26,6 @@ library
   exposed-modules:
       Lib
   other-modules:
-      Paths_livetable_api
-  autogen-modules:
       Paths_livetable_api
   hs-source-dirs:
       src
@@ -40,8 +37,6 @@ library
 executable livetable-api-exe
   main-is: Main.hs
   other-modules:
-      Paths_livetable_api
-  autogen-modules:
       Paths_livetable_api
   hs-source-dirs:
       app
@@ -55,8 +50,6 @@ test-suite livetable-api-test
   type: exitcode-stdio-1.0
   main-is: Spec.hs
   other-modules:
-      Paths_livetable_api
-  autogen-modules:
       Paths_livetable_api
   hs-source-dirs:
       test
